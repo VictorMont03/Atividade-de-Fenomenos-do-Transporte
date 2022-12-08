@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Calculadora online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<script src="ft.js"></script>
+
+<style>
+    .input-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-bottom: 30px;
+    }
+
+    input{
+        border: 1px solid black;
+        padding: 5px
+    }
+
+    .selected{
+        background: blue;
+        color: white;
+    }
+
+    body{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        background-color: #ccc;
+        padding-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    section{
+        background: white;
+        padding:40px 60px;
+        border-radius: 20px;
+
+    }
+    button{
+        cursor: pointer;
+        transition: all ease 0.5s;
+        width: 140px;
+    }
+
+    button:hover{
+        background: #c7c7c7
+    }
+
+    #material, #potencia, #altura{
+        font-weight: bold;
+    }
+</style>
+
+<body class="">
+    <div>
+        <h1>Calculadora Online </h1>
+    </div>
+    <section>
+        <div class="input-wrapper">
+        <label for="vazao">Vazão</label>
+        <input type="text" name="vazao" id="vazao">
+    </div>
+  <div class="input-wrapper">
+    <label for="desnivel">Desnível entre reservatórios</label>
+    <input type="text" name="desnivel" id="desnivel">
+  </div>
+    <div class="input-wrapper">
+
+        <label for="diametro">Diâmetro da tubulação</label>
+        <input type="text" name="diametro" id="diametro">
+    </div>
+    <div class="input-wrapper">
+        <label for="comprimento">Comprimento da tubulação</label>
+        <input type="text" name="comprimento" id="comprimento">
+    </div>
+   
+    <p>Material da tubulação</p>
+    <div>
+        <button onclick="ferro()" id="ferro">Ferro fundido</button>
+    <button onclick="pvc()" id="pvc">PVC</button>
+    <button onclick="aco()" id="aco">Aço</button>
+    </div>
+    <p id="material"></p>
+    <p>Verificar altura da bomba e potencia elétrica consumida pelo conjunto elevatório. </p>
+    <button onclick="conta()">CALCULAR</button>
+   <div>
+    <div>
+        <p>A potência em CV é:</p>
+        <p id="potencia"></p>
+        
+    </div>
+    <div>
+        <p>A altura em metros é:</p>
+        <p id="altura"></p>
+    </div>
+   </div>
+    </section>
+
+</body>
+
+</html>

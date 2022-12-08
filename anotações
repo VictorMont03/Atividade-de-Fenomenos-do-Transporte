@@ -1,0 +1,12 @@
+água (γ=10 kN/m³; ν=10-6 m²/s)) 
+R1 para R2
+
+Variáveis de entrada: 
+vazão (Q) (L/s), desnível entre reservatórios (h) (m), diâmetro da tubulação (D) (mm), comprimento da tubulação (L) (m) 
+
+variaveis para selecionar 
+Ferro fundido – ε = 0,30 mm
+PVC – ε = 0,010 mm
+Aço – ε = 0,050 mm
+
+retorno altura da bomba   (Hm) (m) e potencia elétrica consumida pelo conjunto elevatório N (cv). Adote um rendimento de 70%.
